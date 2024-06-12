@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FERRERIA REUINION</title>
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/parrot.gif" />
+
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/parrot.gif" alt="Party Parrot Gif" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Time">
+                  Time
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Location">
+                  Location
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#About Reunion">
+                  About Reunion
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#">
+                 
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">HELLO</h1>
+            <h2 class="title">FERRERIA REUNION</h2>
+            <h4 class="subtitle tempatwaktu">
+              
+                NOVEMBER  
+                </br>
+                SAN FABIAN, PANGASINAN
+                </br>
+                PHILIPPINES
+              
+            </h4>
+          </div>
+
+          <!-- Start Countdown -->       
+          <div>
+            <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">days</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">hours</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">minutes</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">seconds</p></li>
+            </ul>
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '03/21/2020 17:00:00';
+
+              $('#hitungmundur').countdown({
+                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                offset: +2, // TODO Your Timezone Offset
+                day: 'Hari',
+                days: 'Hari'
+              }, function () {
+                alert('Done!');
+              });
+            </script>  
+          </div>
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+
+
+
+
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Time</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Location</a>
+                  </li>
+                  <li>
+                    <a href="#tentang-sherly-daeng">About Reunion</a>
+                  </li>
+
+                  <li>
+                    <a href="#rsvp"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+
+      
+      <!-- Begin regular-section-->
+      <div class="section-light regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <p class="bodytext" data-aos="fade-in" data-aos-easing="linear">
+          "Family is where life begins and love never ends. Together, we create memories, cherish traditions, and build a legacy of love."
+          <br />
+          The love of a family is life's greatest blessing. Together, we create a story that will be cherished for generations."
+          <br />
+          "Family means no one gets left behind or forgotten. In this circle of strength and love, we find our home."
+        </p>
+        <div data-aos="fade-in" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            FERRERIA FAMILY
+          </div>
+            <div class="ampersand"></div>
+            <div class="nama-lengkap">
+            </div>
+          </div>
+        </div>
+       
+      <!-- End regular-section-->    
+            <!-- Begin Waktu Section -->
+            <div class="section-dark" id="Waktu">
+              <div class="container">
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title">Time</h1>
+                </div>
+                <div class="columns is-multiline">
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-right"
+                  >
+                  
+                    <p class="is-larger has-text-centered">
+                        <div class="waktu tanggal-hari has-text-centered">SATURDAY</div> 
+                        <div class="waktu tanggal-angka has-text-centered">00</div>
+                        <div class="waktu tanggal-bulan has-text-centered">NOVEMBER 2024</div>
+                    </p>
+                  
+                  </div>
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-in" data-aos-easing="linear"
+                  >
+                  
+                    <p class="waktu is-larger has-text-centered">
+                      Call Time:
+                      <br>
+                      <strong>8:00</strong>
+                    </p>
+                  
+                  </div>
+
+                  <div
+                    class="column is-4 has-vertically-aligned-content"
+                    data-aos="fade-left">
+                    
+                    <h1 class="waktu is-larger has-text-centered">
+                      Reception :
+                      <br>
+                      <strong>8:00am - 8:30pm</strong>
+                    </h1>
+                  </div>
+      
+                </div>
+              </div>
+              <div class="space40px"></div>
+              <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+                <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+                  <i class="far fa-calendar-plus"></i>
+                  &nbsp;&nbsp;Google Calendar
+                </a>
+              </div>
+            </section>
+      <!-- End Waktu Content -->
+
+            <!-- Begin Lokasi Section -->
+            <div class="section-light" id="lokasi" data-aos="fade-in" data-aos-easing="linear" >
+              <div class="container">
+                <div class="column is-12 regular-section">
+                  <h1 class="title has-text-centered section-title">Location</h1>
+                  <p class="tempat is-larger has-text-centered">
+                    <strong>San Fabian Pangasinan</strong>
+                    <br>
+                    Beach Front 
+                    <br>
+                   San Fabian Pangasinan, Philippines 
+                    <br>
+                  </p>
+                </div>
+                <div class="section-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61316.58828541037!2d120.34948661809725!3d16.154155381433025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33916ed0616a4c8d%3A0x3374058566e07825!2sSan%20Fabian%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1718173543163!5m2!1sen!2sph" width="1500" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="has-text-centered">
+                  <a href="https://maps.app.goo.gl/7mSrgVEZ5VbNS1HN9" class="button btn-arah" data-aos="fade-right">
+                    <i class="far fa-directions"></i>
+                    &nbsp;&nbsp;LOCATION
+                  </a>
+                </div>
+              </div>
+            </div>
+      <!-- End Lokasi Content -->
+           
+              
+
+      <!-- Begin Foto -->
+      <div class="section-dark foto-foto" id="foto">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12">
+              <h1 class="title has-text-centered section-title">Foto-foto</h1>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8836.JPG');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8843.JPG');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8907.JPG');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8687.JPG');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8779.JPG');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8823.JPG');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8758.JPG');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 foto-item"
+                  style="background-image: url('image/IMG_8665.JPG');"
+                ></figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Work Content -->
+    <!-- Begin Footer -->
+  
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
